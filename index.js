@@ -51,7 +51,7 @@ function draw() {
   })
   let dots = null;
   if( auto ){
-    
+    myFrameRate = 3;
     t = random(0, TWO_PI);
     let vx = v * cos(t);
     let vy = v * sin(t);
@@ -85,7 +85,7 @@ function draw() {
 
 
   } else {
-    
+    myFrameRate = 30;
     dots = e.filter(({x, y}) => {
       return x >  mouseX -100 &&
         mouseX + 100 > x &&
